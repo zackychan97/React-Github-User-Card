@@ -15,7 +15,7 @@ class App extends React.Component {
 
   componentDidMount() {
     axios
-      .get(`https://api.github.com/users/seanaleid`)
+      .get(`https://api.github.com/users/zackychan97`)
       .then(response =>{
         console.log(response)
         console.log(response.data.followers_url)
@@ -28,7 +28,7 @@ class App extends React.Component {
         console.log(`error`)
       })
     axios
-      .get(`https://api.github.com/users/seanaleid/followers`)
+      .get(`https://api.github.com/users/zackychan97/followers`)
       .then(res => {
         console.log(res)
         this.setState({
